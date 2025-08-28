@@ -5,11 +5,7 @@ import Footer from "./Components/Footer";
 function App() {
   return (
     <>
-      {/* <Routes> */}
-
-      {/* </Routes> */}
-
-      <Footer />
+      <Footer/>
     </>
   );
 }
