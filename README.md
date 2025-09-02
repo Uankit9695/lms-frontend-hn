@@ -41,3 +41,30 @@
 ```
     npm i install tailwind postcss autoprefixer
 ```
+
+### add vite.config and taiwind.config both js file in src
+
+```
+    <!-- vite confige.js -->
+    import { defineConfig } from "vite";
+    import react from "@vitejs/plugin-react";
+
+    export default defineConfig({
+      plugins: [react()],
+    });
+
+     <!-- taiwind.config -->
+     /** @type {import('tailwindcss').Config} */
+    import daisyui from "daisyui";
+    import { Line } from "react-chartjs-2";
+
+    export default {
+    content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+    theme: {
+     extend: {},
+    },
+    plugins: [require("daisyui", require("@tailwindcss/line-clamp"))],
+    };
+
+
+```
